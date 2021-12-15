@@ -50,6 +50,10 @@ jspm_packages/
 # Projects Directory
 proyectos/
 Asesorias/
+09_12_2021/test/
+07_12_2021/design-patterns-JS/
+07_12_2021/
+04_12_2021/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/

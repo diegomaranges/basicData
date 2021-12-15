@@ -1,22 +1,29 @@
-suma = (a, b) => {
+//import { Button } from 'bootstrap';
+//import Toast from './node_modules/bootstrap/dist/js/bootstrap';
+/*suma = (a, b) => {
     console.log(a + b);
     return a + b;
 }
 
-suma(1, 2);
+suma(1, 2);*/
 
 // require the module as normal
+require('@popperjs/core');
+require('jquery');
+require('jsdom-global');
+var ts = require("bootstrap").Toast
 var bs = require("browser-sync").create();
-import 'bootstrap/dist/css/bootstrap.css';
 
 // .init starts the server
 bs.init({
     server: "./"
 });
 
+Array.from(document.querySelectorAll('.toast'))
+.forEach(toastNode => new ts(toastNode));
 
-document.getElementById("navbar").appendChild(Image);
 
 // Now call methods on bs instead of the
 // main browserSync module export
-bs.reload("*.html");
+bs.reload("*.html, *.css");
+bs.watch('*.html').on('change', bs.reload);

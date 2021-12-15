@@ -4,11 +4,17 @@
     "description": "test npm packages",
     "main": "index.js",
     "dependencies": {
+        "@popperjs/core": "^2.10.2",
         "bootstrap": "^5.1.3",
         "browser-sync": "^2.27.7",
-        "gulp": "^4.0.2"
+        "gulp": "^4.0.2",
+        "jquery": "^3.6.0",
+        "popper.js": "^1.16.1"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "jsdom": "18.1.0",
+        "jsdom-global": "3.0.2"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node index.js"

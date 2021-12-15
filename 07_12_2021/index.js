@@ -1,8 +1,6 @@
 function bike() {
     console.log(this.name);
 }
-
-var name = "Ninja";
 var obj1 = {
     name: "Pulsar",
     bike: bike
@@ -12,7 +10,6 @@ var obj2 = {
     bike: bike
 };
 
-bike(); // "Ninja"
 obj1.bike(); // "Pulsar"
 obj2.bike(); // "Gixxer"
 
@@ -77,4 +74,12 @@ console.log(diego.getName());
 diego.putName("Martin");
 console.log(diego.getName());
 
-let myArray = new Array(5); // [5]
+import fetch from "node-fetch";
+//const fetch = require("node-fetch")
+
+fetch('https://fakestoreapi.com/products/1')
+            .then(res=>res.json())
+            .then(json=>console.log(json));
+
+
+/** usar chartjs en un proyecto simple con npm. */
